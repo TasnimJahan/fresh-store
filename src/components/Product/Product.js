@@ -64,7 +64,7 @@ const handleOrders = () => {
 
            
                 <div style={{ height:'90%'}} className="col">
-                    <div style={{boxShadow:'10px 10px 20px grey', borderRadius:'10px'}} className="card h-100">
+                    <div style={{boxShadow:'10px 10px 20px grey', borderRadius:'10px',height:'25rem'}} className="card">
                         <img style={{ height:'55%',borderRadius:'10px'}} src={product.imageUrl} alt=""/>
                         <div style={{flex:'none'}}className="card-body">
                             <h5 className="card-title">{product.name} </h5>
