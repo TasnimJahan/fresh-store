@@ -4,16 +4,6 @@ import { UserContext } from '../../App';
 import './DeleteProduct.css'
 import DeleteIcon from '../../icons/delete.png'
 import 'date-fns';
-import Grid from '@material-ui/core/Grid';
-import DateFnsUtils from '@date-io/date-fns';
-import {
-  MuiPickersUtilsProvider,
-  KeyboardTimePicker,
-  KeyboardDatePicker,
-} from '@material-ui/pickers';
-
-import { Button } from '@material-ui/core';
-import Orders from '../Orders/Orders';
 
 
 const DeleteProduct = ({product}) => {
@@ -28,7 +18,7 @@ const DeleteProduct = ({product}) => {
     
     const handleOrders = () => {
         const newOrders = {...loggedInUser, ...selectedDate};
-        fetch('http://localhost:5000/addOrders', {
+        fetch('https://pumpkin-shortcake-83525.herokuapp.com/addOrders', {
             method:'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(newOrders)
@@ -44,7 +34,7 @@ const DeleteProduct = ({product}) => {
     
         const deleteEvent=(id)=>{
             // console.log(id);
-            fetch(`http://localhost:5000/deleteProduct/${id}`, {
+            fetch(`https://pumpkin-shortcake-83525.herokuapp.com/deleteProduct/${id}`, {
                 method: 'DELETE'
             })
             .then(response => response.json())

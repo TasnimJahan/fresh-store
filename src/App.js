@@ -38,12 +38,6 @@ function App() {
             <PrivateRoute path="/orders">
               <Orders />
             </PrivateRoute>
-            {/* <PrivateRoute path="/destination/:vehicleType">
-              <Destination />
-            </PrivateRoute>
-            <Route path="/destination">
-              <Destination />
-            </Route> */}
             <Route exact path="/">
               <Home />
             </Route>

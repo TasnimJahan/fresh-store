@@ -11,7 +11,7 @@ const ProductUpload = () => {
             price: data.price,
             imageUrl: imageUrl
         }
-        const url = `http://localhost:5000/addProduct`;
+        const url = `https://pumpkin-shortcake-83525.herokuapp.com/addProduct`;
         console.log("productData = ",productData);      //console e dekhai
         fetch(url, {
             method: 'POST',

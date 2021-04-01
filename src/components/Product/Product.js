@@ -44,7 +44,7 @@ const handleCheckOutDate = (date) => {
 const handleOrders = () => {
     const newOrders = {...loggedInUser, ...selectedDate,productName};
     console.log("new orders golo=",newOrders);
-    fetch('http://localhost:5000/addOrders', {
+    fetch('https://pumpkin-shortcake-83525.herokuapp.com/addOrders', {
         method:'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(newOrders)

@@ -1,7 +1,7 @@
 import React from 'react';
 import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPen,faTasks,faPlus,faThLarge } from '@fortawesome/free-solid-svg-icons'
+import { faPen,faPlus,faThLarge } from '@fortawesome/free-solid-svg-icons'
 
 // Be sure to include styles at some point, probably during your bootstraping
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
@@ -28,10 +28,6 @@ const Admin = () => {
             <ManageProduct></ManageProduct>
             </div>
             <SideNav
-                // onSelect={(selected) => {
-                //     // Add your code here
-                //     <p>nothinggggggggghgggggggggggggggggggggggggggggggggggggggggggggg</p>
-                // }}
             >
                 
     <SideNav.Toggle />
