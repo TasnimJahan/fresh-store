@@ -1,0 +1,35 @@
+/* a,Link{
+    color:white;
+} */
+div#navbarsExample09 {
+    margin-left: 38%;
+}
+nav.navbar.navbar-expand-lg.navbar-light.rounded {
+    width: 100%;
+}
+
+nav{
+    box-sizing: border-box;
+}
+li.nav-item.nv {
+    padding-top: 10px;
+}
+.navbar li{
+    font-family: 'Roboto', sans-serif;
+    color: #3c3c3c;
+    padding-left: 7%;
+    font-weight: 600;
+}
+/* .navbar li a{
+    color: white;
+} */
+.navbar-toggler{
+    position: absolute;
+    right: 0;
+    border: 1px solid red;
+}
+.navbar-light .navbar-brand {
+    /* color: rgb(255, 255, 255); */
+    font-weight: 600;
+    font-size: 3rem;
+}

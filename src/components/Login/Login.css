@@ -1,0 +1,20 @@
+.login{
+    text-align: center;
+}
+#loginButton{
+    margin-top: 4%;
+    border:1px solid lightgrey;
+    background-color: #fff;
+    border-radius:30px;
+    height: 3rem;
+    width: 40%;
+}
+#googleIcon{
+    margin-right: 12%;
+}
+@media (max-width: 688px){
+    #loginButton{
+        border:2px solid red;
+        width:77%;
+    }
+}

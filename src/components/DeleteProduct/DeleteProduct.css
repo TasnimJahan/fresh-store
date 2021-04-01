@@ -1,0 +1,11 @@
+/* td{
+    border:1px solid red;
+} */
+.deleteIcon{
+    width: 10%;
+    cursor:pointer;
+}
+th,tr:hover {
+    border: 3px solid red!important;
+    background-color: darkgrey;
+}

@@ -1,0 +1,14 @@
+#datepicker{
+    visibility:hidden;
+    display:none;
+}
+@media (max-width: 688px){
+    .col{
+        height: 30rem!important;
+        width:90%
+    }
+    .productDiv {
+        margin: 0 auto;
+        margin-left: 5%;
+    }
+}
