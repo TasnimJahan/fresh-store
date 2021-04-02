@@ -9,3 +9,11 @@ th,tr:hover {
     border: 3px solid red!important;
     background-color: darkgrey;
 }
+
+@media (max-width: 688px){
+    
+.deleteIcon{
+    width: 30%;
+    cursor:pointer;
+}
+}

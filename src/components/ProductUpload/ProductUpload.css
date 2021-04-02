@@ -3,7 +3,7 @@
     margin-left: 3%;
 }
 .productUploadDiv input{
-    width: 45%;
+    width: 77%;
     margin-left: 3%;
     border: none;
     border-top: 1px solid grey;
@@ -14,7 +14,7 @@
     border: 2px solid blue;
     width: 7rem;
     height: 2rem;
-    margin-top: 3%;
+    margin-top: 5%;
     background: greenyellow;
     border-radius: 20px;
 }
@@ -26,11 +26,28 @@
     box-shadow: 10px 10px 20px grey;
     border-radius: 10px;
     padding: 2%;
-    background: gold;
+    background: #d6282f;
+    color: white;
+    font-size: 1.3rem;
 }
 
 @media (max-width: 688px){
     #submit{
-        margin-top:7%;
+        margin-top:0%!important;
     }
+    .productUploadDiv form {
+        display: inline-block;
+        width: 78%;
+        margin-top: 1%important;
+        box-shadow: 10px 10px 20px grey;
+        border-radius: 10px;
+        padding: 2%;
+        background: #d6282f;
+        color: white;
+        font-size: 1rem;
+    }
+    
+.productUploadDiv input{
+    width: 18rem;
+}
 }

@@ -1,17 +1,21 @@
 import React from 'react';
-import './OrderDetails.css'
+import './OrderDetails.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHandPointRight } from '@fortawesome/free-solid-svg-icons'
+
 
 const OrderDetails = (props) => {
     console.log(props);
     const {productName,buyer,email,date} = props;
     return (
         <div className="orderDetailsDiv">
-            <h1>Details</h1>
-            <h3>Product:{productName}</h3>
-            <p>Date:{date}</p>
-            <h5>Name:{buyer}</h5>
-            <p>From this mail:{email}</p>
-            <div style={{width:'100%'}} className="btn btn-primary">Added to cart</div>
+            <h5>Product Name:{productName}</h5>
+            <h5>Quantity:1</h5>
+            <h5>Date:{date}</h5>        
+            <h6>Status: In Progress</h6>
+            <h6>Name:{buyer}</h6>
+            <p>Email:{email}</p>
+            <div style={{width:'100%'}} className="btn btn-primary">Proceed to payment<FontAwesomeIcon style={{ fontSize: '1.3rem', marginLeft:'4px' }} icon={faHandPointRight} /></div>
         </div>
     );
 };

@@ -23,7 +23,7 @@ const Orders = () => {
     },[])
     return (
         <div className="container">
-            <h3>You have total: {orders.length} Orders</h3>
+            <h3 style={{fontSize:'2rem',textDecoration:'underline', textAlign:'center'}}>You have total: {orders.length} Orders</h3>
             <div className="detailOrder">
                 {
                     orders.map(order => <OrderDetails key={order._id} productName={order.productName} date= {(new Date(order.checkIn).toDateString('dd/MM/yyyy'))} buyer={order.name} email={order.email}></OrderDetails>)

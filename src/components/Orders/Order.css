@@ -1,4 +1,5 @@
 .detailOrder{
+    margin-top: 3%!important;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;

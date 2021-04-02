@@ -15,9 +15,8 @@ const CheckOut = () => {
     },[])
     console.log(product);
     return (
-        <div>
-            <h1>Check Out</h1>
-            <h1 style={{margin:'0 auto',width:'80%'}}>CheckOut div</h1>
+        <div className="checkoutDiv">
+            <h1 style={{margin:'0 auto',width:'80%'}}>CheckOut</h1>
             <table className="table table-striped table-hover checkOutTable">
                 <thead>
                     <tr>
@@ -28,7 +27,7 @@ const CheckOut = () => {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>{product.name}</td>
+                        <td>{product.name}-{product.weight}</td>
                         <td>1</td>
                         <td>{product.price}</td>
                     </tr>

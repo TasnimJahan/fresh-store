@@ -10,6 +10,7 @@ const ProductUpload = () => {
         const productData = {
             name: data.name,
             price: data.price,
+            weight: data.weight,
             imageUrl: imageUrl
         }
         const url = `https://pumpkin-shortcake-83525.herokuapp.com/addProduct`;
@@ -51,17 +52,22 @@ const ProductUpload = () => {
                     Product name <br/>
                     <input name="name" placeholder="Product Name" ref={register} />
                 </label>
-                <br/><br/>
+                <br/>
                 <label>
                     Price <br/>
                     <input name="price" defaultValue="100$" ref={register} />
                 </label>
-                <br/><br/>
+                <br/>
+                <label>
+                    Weight <br/>
+                    <input name="weight" defaultValue="100g" ref={register} />
+                </label>
+                <br/>
                 <label>
                     Add Photo <br/>
                     <input name="exampleRequired" type="file" placeholder="Upload photo" onChange={handleImageUpload} />
                 </label>    
-                <br/><br/>
+                <br/>
                 <input id="submit" type="submit" />
             </form>
         </div>

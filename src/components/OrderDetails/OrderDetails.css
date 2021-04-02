@@ -1,4 +1,5 @@
 .orderDetailsDiv{
+    background-color: yellow;
     margin: 0 auto;
     border: 1px solid lightgrey;
     box-shadow: 10px 10px 10px grey;
@@ -6,4 +7,18 @@
     margin-bottom: 2%;
     margin-left: 2%;
     padding: 14px;
+}
+
+@media (max-width: 688px){
+    .orderDetailsDiv {
+        width: 84%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+    h3, .h3 {
+        font-size: 1.75rem;
+        margin-bottom: 7%!important;
+        text-decoration: underline;
+        color: darkblue;
+    }
 }
