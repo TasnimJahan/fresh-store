@@ -70,7 +70,7 @@ const handleOrders = () => {
                             <h5 className="card-title">{product.name} </h5>
                         </div>
                         <div className="card-footer" style={{backgroundColor:'#FFFFFF',height:'15%'}}>
-                            <p className="text-muted" style={{display: 'flex',justifyContent: 'space-between'}}> <span><h5>{product.price}</h5></span> <span><p><Link to='/checkOut'><button className="btn btn-success"onClick={handleOrders}> <small>Buy Now</small> </button></Link></p></span>
+                            <p className="text-muted" style={{display: 'flex',justifyContent: 'space-between'}}> <span><h5>{product.price}</h5></span> <span><p><Link to={`/checkOut/${product._id}`}><button className="btn btn-success"onClick={handleOrders}> <small>Buy Now</small> </button></Link></p></span>
                              </p>
                         </div>
                     </div>
