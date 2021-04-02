@@ -18,7 +18,7 @@ const ManageProduct = () => {
     return (
         <div>
             <h1>Manage product</h1>
-           <div>
+           <div style={{width:'90%'}}>
                <table className="table table-striped table-hover">
                    <tr>
                        <th scope="row">Product Name</th>

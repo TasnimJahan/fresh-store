@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { useContext } from 'react';
 import { UserContext } from '../../App';
+import OrderDetails from '../OrderDetails/OrderDetails';
+import './Order.css'
 
 const Orders = () => {
     const [orders,setOrders] = useState([]);
@@ -20,12 +22,13 @@ const Orders = () => {
         .then(data => setOrders(data));
     },[])
     return (
-        <div>
-            <h1>Order page</h1>
-            <h3>You have : {orders.length} Orders</h3>
-            {
-                orders.map(order => <li key={order._id}>{order.productName} bought by {order.name} from: {(new Date(order.checkIn).toDateString('dd/MM/yyyy'))} to:  {(new Date(order.checkOut).toDateString('dd/MM/yyyy'))} from this mail={order.email}</li>)
-            }
+        <div className="container">
+            <h3>You have total: {orders.length} Orders</h3>
+            <div className="detailOrder">
+                {
+                    orders.map(order => <OrderDetails key={order._id} productName={order.productName} date= {(new Date(order.checkIn).toDateString('dd/MM/yyyy'))} buyer={order.name} email={order.email}></OrderDetails>)
+                }
+            </div>
         </div>
     );
 };

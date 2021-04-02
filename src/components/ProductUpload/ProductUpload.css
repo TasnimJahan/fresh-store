@@ -1,0 +1,36 @@
+.productUploadDiv label,input{
+    width:45%;
+    margin-left: 3%;
+}
+.productUploadDiv input{
+    width: 45%;
+    margin-left: 3%;
+    border: none;
+    border-top: 1px solid grey;
+    border-radius: 10px;
+    background: #f3c247;;
+}
+#submit {
+    border: 2px solid blue;
+    width: 7rem;
+    height: 2rem;
+    margin-top: 3%;
+    background: greenyellow;
+    border-radius: 20px;
+}
+.productUploadDiv form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 78%;
+    margin-top: 5%;
+    box-shadow: 10px 10px 20px grey;
+    border-radius: 10px;
+    padding: 2%;
+    background: gold;
+}
+
+@media (max-width: 688px){
+    #submit{
+        margin-top:7%;
+    }
+}

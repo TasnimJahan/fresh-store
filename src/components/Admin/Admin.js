@@ -32,16 +32,16 @@ const Admin = () => {
                 
     <SideNav.Toggle />
         <SideNav.Nav defaultSelected="home">
-            <NavItem eventKey="manageProduct">
-                <NavIcon onClick={handleProductManagement}>
+            <NavItem onClick={handleProductManagement} eventKey="manageProduct">
+                <NavIcon>
                 <FontAwesomeIcon style={{ fontSize: '1.75em' }} icon={faThLarge} />
                 </NavIcon>
                 <NavText>
                     Manage Product
                 </NavText>
             </NavItem>
-            <NavItem eventKey="addProduct">
-                <NavIcon onClick={handleAdd}>
+            <NavItem onClick={handleAdd} eventKey="addProduct">
+                <NavIcon>
                 <FontAwesomeIcon style={{ fontSize: '1.75em' }} icon={faPlus} />
                 </NavIcon>
                 <NavText>
