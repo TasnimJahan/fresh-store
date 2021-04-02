@@ -19,7 +19,6 @@ function App() {
   const [loggedInUser,setLoggedInUser] = useState({})
   return (
     <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
-      {/* <h2>Name: {loggedInUser.name}</h2> */}
       <Router className="container">
           <Header/>
           <Switch>

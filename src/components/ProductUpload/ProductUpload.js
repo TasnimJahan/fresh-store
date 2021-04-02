@@ -14,7 +14,6 @@ const ProductUpload = () => {
             imageUrl: imageUrl
         }
         const url = `https://pumpkin-shortcake-83525.herokuapp.com/addProduct`;
-        console.log("productData = ",productData);      //console e dekhai
         fetch(url, {
             method: 'POST',
             headers: {
@@ -23,8 +22,8 @@ const ProductUpload = () => {
             body: JSON.stringify(productData)
         })
         .then(response => console.log("server side response", response))
-        console.log(data)
     };
+    
     const handleImageUpload = (event) => {
         console.log(event.target.files);
         console.log(event.target.files[0]);
@@ -36,7 +35,6 @@ const ProductUpload = () => {
         axios.post('https://api.imgbb.com/1/upload', imageData)
           .then(function (response) {
             console.log(response);
-            console.log(response.data.data.display_url);
             setImageUrl(response.data.data.display_url);
           })
           .catch(function (error) {
@@ -45,8 +43,7 @@ const ProductUpload = () => {
 
     }
     return (
-        <div className="productUploadDiv">
-            
+        <div className="productUploadDiv">          
             <form onSubmit={handleSubmit(onSubmit)}>
                 <label>
                     Product name <br/>

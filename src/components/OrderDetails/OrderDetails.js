@@ -5,7 +5,6 @@ import { faHandPointRight } from '@fortawesome/free-solid-svg-icons'
 
 
 const OrderDetails = (props) => {
-    console.log(props);
     const {productName,buyer,email,date,orderId} = props;
     return (
         <div className="orderDetailsDiv">

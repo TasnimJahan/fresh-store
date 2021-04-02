@@ -12,14 +12,12 @@ import {
   KeyboardTimePicker,
   KeyboardDatePicker,
 } from '@material-ui/pickers';
-
 import { Button } from '@material-ui/core';
 import Orders from '../Orders/Orders';
 
 
 const CheckOut = () => {
     const {id} = useParams();
-    console.log(id);
     const [product,setProduct]=useState({})
     useEffect(() => {
         fetch(`https://pumpkin-shortcake-83525.herokuapp.com/products/${id}`)
@@ -29,7 +27,6 @@ const CheckOut = () => {
             setProduct(data[0]);
         })
     },[])
-    console.log(product);
     const productName= product.name;
     const productWeight=product.weight;
     const productId=product._id;
@@ -38,8 +35,6 @@ const CheckOut = () => {
 
     
 const [loggedInUser,setLoggedInUser] = useContext(UserContext);
-console.log(loggedInUser);
-
 const [selectedDate, setSelectedDate] = React.useState({
     checkIn: new Date(),
     checkOut: new Date()
@@ -60,7 +55,6 @@ const handleCheckOutDate = (date) => {
 
 const handleOrders = () => {
     const newOrders = {...loggedInUser, ...selectedDate,productName,productWeight,productId};
-    console.log("new orders golo=",newOrders);
     fetch('https://pumpkin-shortcake-83525.herokuapp.com/addOrders', {
         method:'POST',
         headers: {'Content-Type': 'application/json'},

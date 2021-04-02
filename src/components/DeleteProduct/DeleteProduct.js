@@ -7,24 +7,15 @@ import 'date-fns';
 
 
 const DeleteProduct = ({product}) => {
-    console.log(product);
-    
-    
-
-    const [loggedInUser,setLoggedInUser] = useContext(UserContext);
-    console.log(loggedInUser);
-    
+    const [loggedInUser,setLoggedInUser] = useContext(UserContext);  
         const deleteEvent=(id)=>{
-            // console.log(id);
             fetch(`https://pumpkin-shortcake-83525.herokuapp.com/deleteProduct/${id}`, {
                 method: 'DELETE'
             })
             .then(response => response.json())
             .then(result => {
                 console.log("successfully deleted");
-                console.log("result ta bujhinai= result holo=", result);
-                if(result){
-                    console.log("owaoo deleted");
+                if(result){           
                     document.getElementById("productRow").style.display="none"
                 }
             })
@@ -32,9 +23,6 @@ const DeleteProduct = ({product}) => {
         }
     
         return (
-            // <div>
-    
-    
        <tbody id="productRow">
             <tr>
                 <td scope="col">{product.name}</td>
@@ -43,10 +31,6 @@ const DeleteProduct = ({product}) => {
                 <td onClick={() =>deleteEvent(product._id)} scope="col"><img className="deleteIcon" src={DeleteIcon} alt=""/></td>
             </tr>
        </tbody>
-                
-                   
-
-            // </div>
         );
 };
 

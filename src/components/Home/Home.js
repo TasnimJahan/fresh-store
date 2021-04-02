@@ -15,9 +15,6 @@ useEffect(()=>{
     })
 }, [])
 
-console.log(products);
-
-
     return (
         <div style={{ backgroundColor:'chartreuse'}}>
 

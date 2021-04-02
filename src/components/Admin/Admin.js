@@ -3,7 +3,6 @@ import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/rea
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPen,faPlus,faThLarge } from '@fortawesome/free-solid-svg-icons'
 
-// Be sure to include styles at some point, probably during your bootstraping
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import ProductUpload from '../ProductUpload/ProductUpload';
 import './Admin.css'
@@ -15,7 +14,6 @@ const Admin = () => {
         document.getElementById("ProductUploadDiv").style.display="block";
     }
     const handleProductManagement=()=>{
-        console.log("clicked add");
         document.getElementById("manageProductDiv").style.display="block";
         document.getElementById("ProductUploadDiv").style.display="none";
     }
