@@ -22,6 +22,7 @@ const ManageProduct = () => {
                <table className="table table-striped table-hover">
                    <tr>
                        <th scope="row">Product Name</th>
+                       <th scope="row">Weight</th>
                        <th scope="row">Price</th>
                        <th scope="row">Delete</th>
                    </tr>

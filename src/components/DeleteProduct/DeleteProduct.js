@@ -39,6 +39,7 @@ const DeleteProduct = ({product}) => {
             <tr>
                 <td scope="col">{product.name}</td>
                 <td scope="col">{product.price}</td>
+                <td scope="col">{product.weight}</td>
                 <td onClick={() =>deleteEvent(product._id)} scope="col"><img className="deleteIcon" src={DeleteIcon} alt=""/></td>
             </tr>
        </tbody>

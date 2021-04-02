@@ -34,6 +34,7 @@
 @media (max-width: 688px){
     #submit{
         margin-top:0%!important;
+        width: 30%!important;
     }
     .productUploadDiv form {
         display: inline-block;
@@ -48,6 +49,6 @@
     }
     
 .productUploadDiv input{
-    width: 18rem;
+    width: 205%!important;
 }
 }

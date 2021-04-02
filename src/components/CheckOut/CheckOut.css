@@ -11,3 +11,16 @@
     margin-top: 2%;
     text-align: center;
 }
+
+#datepicker{
+    visibility:hidden;
+    display:none;
+}
+@media (max-width: 688px){
+    .checkOutBtn {
+        width: 31%;
+        margin-left: 63%!important;
+        margin-top: 4%;
+        text-align: center;
+    }
+}
