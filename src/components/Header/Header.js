@@ -12,7 +12,7 @@ const Header = () => {
         <div className="header container">
             <div className="container-fluid">
                 <nav class="navbar navbar-expand-lg navbar-light rounded">
-                    <a className="navbar-brand" href="#">ELECTRONICS PIVOT</a>
+                    <a className="navbar-brand" href="#">FRESH STORE</a>
                     <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={handleNavCollapse}>
                         <span class="navbar-toggler-icon"></span>
                     </button>
